@@ -1,2 +1,516 @@
-# COS__JONAS
- COVER LETTER
+# COS\_\_JONAS
+
+COVER LETTER
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junghan's Portfolio</title>
+    <!-- <meta name="" content="" /> -->
+    <!-- icon도 웹 정보로 들어가기 때문에 다음 써야 함 -->
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Junghan"
+    />
+    <meta name="author" content="Junghan" />
+    <!-- 브라우저 title 왼쪽에 나오는 아이콘 만들 때 -->
+    <!-- <link rel="icon" href="파일명/파일형식" type="imge/png 또는 imge/jpeg" -->
+    <link rel="icon" type="imge/png" href="imgs/다운로드 (1).png" />
+    <!-- fontawesome how to use -->
+    <script
+      src="https://kit.fontawesome.com/ebe8b0ce9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS 파일을 불러올 때, 항상 쓰기 때문에 필수적으로 입력해야할 값 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript를 사용하기 위한 script, "defer" 꼭 써야함 -->
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <a href="">JUNG HAN CHOI</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu__items">
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">Apply</li>
+          <li class="navbar__menu__item" data-link="#skills">About Me</li>
+          <li class="navbar__menu__item" data-link="#work">Ambition</li>
+          <!-- <li class="navbar__menu__item" data-link="#testmonials">
+            Testmonials
+          </li> -->
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <img src="" alt="" />
+      <div class="home__container">
+
+        <div class="contact__links">
+          <a href="https:/www.instagram.com/jnghnchlm/" target="_blank">
+            <i class="fab fa-instagram"> jnghnchlm</i></a>
+          <!-- <a href="#" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a> -->
+        </div>
+
+        <img
+          src="imgs/PROFILE.jpeg"
+          alt="Junghan's Profile Photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Hello, I'm Junghan Choi :)</h1>
+        <!-- <h2 class="home__description">
+          Thank you for coming here :)
+        </h2> -->
+        <h3 class="home__description">
+          I hope this video could make everyone love each other even more than the past
+
+
+        </h3>
+        <h3>
+          <a href="https://youtu.be/7k1NI9AYrls" target="_blank"><button class="carl__sagan">Carl sagan - The pale blue dot</button></a>
+        </h3>
+
+        <button class="home__contact" data-homeLink="#contact">
+          CONTACT ME
+        </button>
+      </div>
+    </section>
+
+        <!-- About -->
+        <section id="about" class="section section__container">
+          <h1>지원 동기</h1>
+          <h2>패션</h2>
+          <p>
+            외출을 하기 전에 자신을 꾸미는 일은 자신을 사랑하고 소중히 여기는 것에서 시작한다고 생각합니다.제가 가지고 있던 옷이 저보다 다른 친구에게 더 잘 어울릴 것 같다는 생각이 들 때는 옷을 주거나 선물해주기도 합니다. 제가 쇼핑을 하지 않더라도 친구들의 쇼핑을 도와주기도 합니다. 친구가 구매하고 싶은 옷을 입었을 때 사이즈가 잘 맞는지, 어울리는지, 길이와 폭, 라운드의 폭과 재봉선 등등 품질이 좋은지도 보고,  다른 옷과 스타일이 많으니 천천히 둘러보라고 합니다. 마치 친구는 고객이고 저는 매장에 직원처럼 행동합니다. 1시간, 2시간 동안 친구들의 쇼핑을 도와주는 것이 지루하다고 생각해본 적은 없습니다. 저는 친절한 서비스 마인드를 가져야하는 직업에 대해서는 누구보다 자신 있습니다.
+          </p>
+
+          <h2>모두에게 평등한 기회
+          </h2>
+          <p>
+            성장할 수 있는 기회가 있다는 것은 저에게 있어 정말 매력적인 제도라고 생각합니다. 직원들의 잠재력과 역량을 키워주는 기업이라는 것이 저에게는 감사한 기회라고 생각합니다. 이 기업에 속해서 열심히 일하고 겸손한 마음으로 일을 배우고 성실하게 일하고 싶습니다. 저는 제가 좋아하고 흥미가 있는 것이 있다면 끈기를 가지고 끝까지 하는 사람입니다.
+          </p>
+
+          <h2>환경보호</h2>
+          <p>
+            지구 환경보호에 관심이 있습니다. 해양동물들이 플라스틱으로 인해서 죽는다는 사실을 알고 플라스틱 사용을 줄이고 있습니다. 카페에서는 플라스틱 빨대와 컵을 사용하지 않고 제 개인 텀블러 또는 종이컵을 사용합니다.
+            오래 입을 수 있는, 지속 가능한 아이템들을 제작하여 지구 환경 보존에 힘을 쓰는 기업에서 일을 하게 된다는 것은 저에게 큰 의미가 될 것 입니다.
+          </p>
+
+          <h2>수평 조직</h2>
+          <p>
+            수평 조직의 장점은 존중과 배려가 담겨 있는 대화를 할 수 있다는 것과 열린 대화를 나눔으로써 자유롭게 업무에 대한 자신의 의견을 나눌 수 있다는 것이라고 생각합니다. 제게 있어서 삶에서 가장 중요한 부분은 존중이라고 생각합니다. 외국 문화를 배우면서 인종차별에 관심도 생기기 시작했습니다. 차별 없는 수평조직에서 일을 한다는 것은 정말 기쁜 일이라고 생각합니다.
+          </p>
+
+          <p>저는 사진을 좋아합니다. 사진을 잘 찍으려면 무조건 많이 찍는 것이 중요한 것이 아니라 유명한 사진 작가들의 사진을 많이 봐야한다고 합니다. 누군가는 “나도 저 멋진 나라에, 저 멋진 장소에 간다면 나도 사진을 잘 찍을 수 있어” 라고 말하기도 합니다. 이에 대해 한 유명한 사진 작가는 “그곳에 가는 것 자체가 실력이다.”라고 말했습니다. 패션도 마찬가지라고 생각합니다.
+          </p>
+
+
+
+        <h2>안정적인 기업 & 외국계 기업
+        </h2>
+        <p>
+          국내 기업과는 다르게 사람의 인성과 잠재력을 보기 때문에 외국계 기업을 선택했습니다. 학력무관, 전공무관, 나이무관, 패션에 관심이 있는 사람은 누구든지 지원할 수 있는 자격 요건은 저에게 정말 감사한 기회라고 생각합니다. 세계적인 규모인 만큼 많은 매장을 보유했고, 많은 매장을 보유한 만큼, 다른 기업에 비해서 해외 근무를 할 수 있는 기회, 새로운 일자리의 기회가 더 많다는 것이고 안정적인 근무지가 될 수 있다고 생각했기 때문입니다.
+        </p>
+
+        <h2>미니멀리즘</h2>
+        <p>저는 미니멀 라이프를 추구하려고 노력하고 있습니다. COS를 처음 접한 것은 이탈리아 로마에 있는 매장이었습니다. 처음 들어갔을 때, 정말 심플하고 깔끔한 인테리어가 인상 깊었습니다. 상품의 퀄리티 또한 다른 곳에서는 잘 느끼지 못했던 생소한 소재의 느낌이기도 했고 독특했었던 기억이 납니다. 의류 또한 인테리어와 마차간지로 심플하고 깔끔하면서 세련된 디자인과 색감을 가졌다고 생각합니다. 미니멀리즘은 추구하는 제가 COS에서 일한다는 것은 저에게 기쁜 일이 될 것 입니다.
+        </p>
+
+        <h2>직원 복지 및 헤택</h2>
+          <p>다른 브랜드 기업과는 다르게 외국어개발지원금과 건강지원금, 명절 감사금, 장기근속자 복리 후생 및 HIP라는 장기근속 인센티브 프로그램이라는 복지와 혜택은 정말 많은 것이라고 생각합니다. 특히, 외국어개발지원금은 저에게 정말 좋은 혜택이라고 생각합니다. 또한 직원할인이 온라인과 자매 브랜드까지 된다는 것도 정말 좋다고 생각합니다. 직원의 균등한 기회를 추구하는 기업에서 성장하고 싶습니다.
+          </p>
+
+          <!-- <div class="about__majors">
+            <div class="major">
+              <div class="major__icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h2 class="major__title">Front-end</h2>
+              <div class="major__description">
+                HTML, CSS, Javascript, TypeScript, <br />
+                Python, Ruby
+              </div>
+            </div>
+            <div class="major">
+              <div class="major__icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h2 class="major__title">Front-end</h2>
+              <div class="major__description">
+                HTML, CSS, Javascript, TypeScript, <br />
+                Python, Ruby
+              </div>
+            </div>
+            <div class="major">
+              <div class="major__icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h2 class="major__title">Front-end</h2>
+              <div class="major__description">
+                HTML, CSS, Javascript, TypeScript, <br />
+                Python, Ruby
+              </div>
+            </div>
+          </div>
+          <div class="about__jobs">
+            <div class="job">
+              <img src="imgs/GoogleWorked.png" alt="Google" class="job__logo" />
+              <div class="job__description">
+                <p class="job__name">
+                  I worked in Google as Korean, Front-end, Back-end Developer
+                </p>
+                <p class="job__period">for 5 years from 2025-2030</p>
+              </div>
+            </div>
+            <div class="job">
+              <img
+                src="imgs/instagramWorked.png"
+                alt="Instagram"
+                class="job__logo__instagram"
+                width="185"
+              />
+              <div class="job__description">
+                <p class="job__name">
+                  I worked in Instagram front-end developer as Koean
+                </p>
+                <p class="job__period">for 3 years from 2022-2025</p>
+              </div>
+            </div>
+          </div> -->
+        </section>
+
+        <!-- testmonials -->
+
+   <section id="testmonials" class="section">
+    <h1>BLACK LIVES MATTERS</h1>
+    <!-- <div class="section__container">
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae obcaecati omnis, eum quas architecto ex! Dolor, quidem
+              deleniti! Animi sed dolor laborum doloremque consequuntur
+              dolores optio placeat alias quidem ea!
+            </p>
+            <p class="name"><a href="">Junghan</a> / Mirosoft CEO</p>
+          </div>
+          <img
+            src="imgs/testimonial/Bill.png"
+            alt="People"
+            class="testimonial__avatar"
+          />
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img
+            src="imgs/testimonial/Oprah.png"
+            alt="People"
+            class="testimonial__avatar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae obcaecati omnis, eum quas architecto ex! Dolor, quidem
+              deleniti! Animi sed dolor laborum doloremque consequuntur
+              dolores optio placeat alias quidem ea!
+            </p>
+            <p class="name">
+              <a href="">Junghan</a> / Broadcaster and Actress
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>About Me</h1>
+        <h2>능동성</h2>
+
+        <p>
+          저는 운동을 좋아하고 잘합니다. 운동을 할 때 사람들의 말에 귀를 기울입니다. 어떤 면이 부족한지를 물어보고, 그 날 운동에 대해서 무엇을 잘 못 했는지를 다시 생각해 봅니다. 문제점과 약점을 파악하고 고치기 위해서 연습하는 시간을 따로 갖습니다.
+        </p>
+        <p>
+          웨이트 트레이닝을 꾸준히 하고 있습니다. 건강한 몸과 멋진 몸을 만들기 위해서 어떻게 하면 더 효율적으로 근육을 만들 수 있을까를 고민하고 운동을 배우기 위해서 인터넷을 참고하여 많은 정보들을 참고한 뒤에 어느 정도 타당하고 사실에 근거한 영상과 글을 선택하여 공부하고 실천하고 있습니다. 예를 들어 3가지를 찾았다면, 1가지씩 1주에서 2주정도 직접 해본 후, 자신에게 가장 잘 맞는 방법을 찾는 것입니다.
+        </p>
+
+<p>워킹홀리데이 생활을 편하게 하기 위해서 1년 동안 혼자 영어회화 공부를 했습니다. 유창한 영어를 할 수 있는 것은 아니지만 외국인들과 카페에서 커피 한 잔 하면서 대화를 나눌 수 있을 정도 입니다. 코로나로 인해 워킹홀리데이를 못 갔지만 언어 공부에 재미가 생겨 매일 30분 이상 공부를 하고 있고 “나도 할 수 있다”라는 자신감이 생겼고, 작은 성취감을 느낄 수 있었습니다. 그래서 지금은 공부에 대한 자신감도 있고, 관심있는 자격증에 대해 알아보고 있습니다.
+</p>
+<p>저는 학창시절 공부를 잘 하지 않았습니다. 하고 싶은 일이 무엇인지 몰랐기 때문입니다. 공무원이 되고 싶다는 생각에, 그렇게 안하던 공부를 1년반 동안 매일 8~10시간 이상씩 했습니다. 결국 시험에 합격하지 못했지만 이 경험을 통해 많은 것을 배웠고, 원하는 것이 있다면 그 목표를 향해서 무엇을 어떻게 해야하는지 스스로 찾게 된다는 것을 알았습니다.
+</p>
+<p>저는 제 자신을 위해서 무언가를 해야할 “필요성”이 생기면, 능동적으로 그 무언가를 하는 사람입니다.</p>
+
+<h2>차분함</h2>
+<p>전 직장에서 팀리더에게 들은 저의 최고 장점은 “차분함”이라고 했습니다. 어떤 일에도 차분함을 잃지 않는 것은 정말 큰 장점이라고 했습니다. 특히 서비스 직에서는 말투의 억양과 속도에 신경을 써야하기 때문에 조금 까다로운 고객과의 트러블이 생기면 침착함을 잃을 때가 있습니다. 하지만 저는 이러한 상황 속에서 차분함을 유지할 수 있습니다.</p>
+
+<h2>의사소통</h2>
+<p>제가 가장 자신 있는 부분은 바로 서비스 마인드 입니다. 고객센터 상담직을 하면서 2개월 연속 ‘우수 상담원’이 되기도 하였습니다. 고객들의 설문에 의해 칭찬 사원이 된다는 것은 조금은 힘든 일이라고 생각합니다. 고객들은 상담이 끝난 뒤에 문자로 오는 설문 조사에 거의 응하지 않습니다. 상담원으로부터 진정성 있고 친절한 느낌을 받았다고 생각하는 고객들만이 설문조사에 참여합니다. 2개월 연속, “우수 상담원”이 되었을 때, 정말 기뻤고, 서비스 마인드에 대해서 더 큰 자신감을 갖게 되었습니다.</p>
+<p>평소에 어르신들과 대화를 잘하는 편입니다. 친구들의 부모님과도 편하게 대화를 나눌 수 있고, 길에서 마주치게 되면 이런저런 얘기를 친구처럼 많이 하기도 합니다. 친구들에게 들었던 말 중에 “너는 나보다 우리 부모님이랑 대화를 더 잘하는 거 같아”, “어르신들이랑 대화를 잘 할 수 있는 애들 중에서 얘가 최고야”라고 말해준 적도 있습니다. 그만큼 대화에 있어선 나이와 상관없이 잘 할 수 있습니다. 매장에서 일을 하게 된다면 고객에게 친절한 인사와 인상을 줄 수 있다고 생각하고 그 이미지는 매장에 좋은 이미지를 줄 수 있다고 생각합니다.</p>
+        <section class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title"></h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>목소리</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>좋은 인상</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>예의</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>차분함</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>꼼꼼함</span>
+                <span>81%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 81%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>다정함</span>
+                <span>71%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 71%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>끈기</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>리더십</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__description">
+                <span>깔끔</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__description">
+                <span>냉정함</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">관심</h3>
+              <ul class="tools__list">
+                <li>운동, 음악</li>
+                <li>패션, 보컬 </li>
+                <li>환경보호, 동물보호</li>
+                <li>영어회화, 인종차별</li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">취미</h3>
+              <ul class="etc__list">
+                <li>헬스, 축구</li>
+                <li>달리기, 노래</li>
+                <li>코딩</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>입사 후 포부</h1>
+        <p>
+          미래에 대한 막연한 포부보다 중요한 것은 입사를 하고 난 후에 하루하루 열심히 하자, 오늘도 열심히 하자, 내일도 열심히 하자라는 마음가짐인 것을 알았습니다. 한 마디, 한 마디를 하려고 할 때마다 신중하게 생각하고 말 해야한다는 것을 알았습니다.
+        </p>
+
+        <p>첫 번째, 매장에서 해야하는 업무에 집중하겠습니다.</p>
+        <p>두 번째, 업무의 효율성을 위해서 서로 협력하는 것을 잊지 않겠습니다.</p>
+        <p>세 번째, 맡은 업무를 어떻게 하면 정확하고 빠르게 처리할 수 있는지를 고민하겠습니다.</p>
+        <p>네 번째, 자기계발을 멈추지 않겠습니다.</p>
+
+        <p>저의 마음 가짐 중에 하나는 “도전 하지도 않고, 포기하지 마라” 입니다. 99%의 불가능함과 1%의 가능함 사이에서  1%를 택하는 사람들을 보면서 깨달았던 것을 삶의 기준으로 삼고 있습니다.</p>
+        <p>성장할 수 있는 기회가 있다면 성실히 자기계발을 하여 전문성을 지닌 사람이 되고 싶습니다. 일할 수 있는 기회를 주신다면 감사하겠습니다.
+        </p>
+
+        <!-- <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All<span class="category__count">8</span>
+          </button>
+          <button class="category__btn" data-filter="front-end">
+            Front-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="back-end">
+            Back-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="mobile">
+            Mobile<span class="category__count">2</span>
+          </button>
+        </div>
+
+        <div class="work__projects">
+          <a
+            href="http://127.0.0.1:5500/Academy_DreamCoding/Portfolio/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9.html"
+            class="project"
+            target="blank"
+            data-type="front-end"
+          >
+            <img
+              src="imgs/projects/youtube.png"
+              alt="Youtube"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
+          <a
+            href="http://127.0.0.1:5500/Academy_DreamCoding/Portfolio/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9.html"
+            class="project"
+            target="blank"
+            data-type="back-end"
+          >
+            <img
+              src="imgs/projects/youtube1.png"
+              alt="Youtube"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Shopping mall game</h3>
+              <span>HTML, CSS, Javascript, Json</span>
+            </div>
+          </a>
+          <a
+            href="http://127.0.0.1:5500/Academy_DreamCoding/Portfolio/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9.html"
+            class="project"
+            target="blank"
+            data-type="mobile"
+          >
+            <img
+              src="imgs/projects/youtube2.png"
+              alt="Youtube"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Responsive Navbar</h3>
+              <span>HTML, CSS, with media query</span>
+            </div>
+          </a>
+          <a
+            href="http://127.0.0.1:5500/Academy_DreamCoding/Portfolio/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9.html"
+            class="project"
+            target="blank"
+            data-type="mobile"
+          >
+            <img
+              src="imgs/projects/youtube.png"
+              alt="Youtube"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Projects</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h1 class="contact__email">cbliss9103@gmail.com</h1>
+      <div class="contact__links">
+        <a href="https:/www.instagram.com/jnghnchlm/" target="_blank">
+          <i class="fab fa-instagram"> jnghnchlm</i></a>
+        <!-- <a href="#" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a> -->
+      </div>
+      <!-- <p class="contact__rights">2020 Jugnhan</p> -->
+    </section>
+
+
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+  </body>
+</html>
