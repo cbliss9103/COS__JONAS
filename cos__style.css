@@ -1,0 +1,663 @@
+/* Global set up & Typography */
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annimation */
+  --annimation-duration: 500ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline-style: none;
+}
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  /* 마우스 커서 모양을 링크나 버튼에 가져가도 기본 화살표 모양을 유지하게 하는 것 */
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  /* 배경색을 투명하게 만들기 */
+  background-color: transparent;
+  /* 마우스 커서 모양을 클릭이 가능한 곳에 가져갔을 때 손모양으로 바뀌게 하는 것 */
+  cursor: pointer;
+  border: none;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 15px;
+  /* text-align: start; */
+}
+
+#about h2 {
+  margin-top: 30px;
+}
+
+#skills h2 {
+  margin-top: 30px;
+}
+
+#work h2 {
+  margin-top: 30px;
+}
+
+#testmonials h1 {
+  color: white;
+  font-size: 5rem;
+  margin: 0px;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+  text-align: start;
+}
+
+/* Navbar */
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  padding: 16px;
+  position: sticky;
+  top: 0px;
+  transition: all 1.5s ease-in-out;
+  /* 아무리 겹쳐도 항상 맨위에 보이게 하는 것 */
+  z-index: 1;
+}
+#navbar.navbar__dark {
+  background-color: #ffca28;
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__items {
+  display: flex;
+}
+
+.navbar__menu.open {
+  display: block;
+}
+
+.navbar__menu__items.open {
+  /* background-color: #ffca28; */
+  /* margin: 15px -16px; */
+}
+
+.navbar__menu__item {
+  /* 사용자에게 이건 클릭이 가능하다는 표시를 해주는 것 */
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 0px 4px;
+  border-radius: var(--size-border-radius);
+  transition: all 300ms ease;
+  /* border: 2px solid var(--color-white); */
+}
+
+/* .navbar__menu__item.active {
+    border: 2px solid var(--color-black);
+    border-radius: var(--size-border-radius);
+  } */
+
+.navbar__menu__item:hover {
+  background-color: #ffca28;
+  /* border: 2px solid var(--color-pink); */
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__logo a {
+  color: var(--color-black);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  /* 평소에는 보이지 않게 */
+  display: none;
+}
+
+/* Home */
+#home {
+  /* 배경 이미지 background: url(""); */
+  /* center/cover no-repeat */
+  background: url("imgs/fashion-1031469_1920.jpg") center/cover no-repeat;
+  padding: 120px;
+  text-align: center;
+}
+
+#contact {
+  background: url("imgs/handshake-4040911_1920.jpg") center/cover no-repeat;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  border: 2px solid --color-light-white;
+  transition: all 1000ms ease;
+}
+
+.home__avatar:hover {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid --color-light-white;
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  /* 보통 1000-1200px로 최대 크기를 설정함*/
+
+  text-align: center;
+  /* 양쪽에 margin을 균등하게 분배하는 것 */
+  /* margin이 오른쪽 또는 왼쪽에만 있을 경우 */
+  margin: auto;
+}
+
+.section__container {
+  max-width: 800px;
+  /* text-align을 쓰고 나서 창의 크기가 변경되어, 중앙으로 오지 않을 때 */
+  /* margin: auto; 를 써야함  */
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.section__container p {
+  margin-bottom: 30px;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0px;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  color: var(--color-blue);
+}
+
+.major__title {
+  color: var(--color-dark-grey);
+}
+
+/* major__icon이 hover될 때, i만 변화 */
+.major__icon:hover i {
+  color: var(--color-pink);
+  transform: rotate(-180deg) scale(0.5);
+  transition: all 1000ms ease;
+}
+
+.major__icon i {
+  /* 애니메이션 효과  250~350이 적당 */
+  transition: all var(--anmimation-duration) ease;
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-grey);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+
+.job__period {
+  font-size: var(--anmimation-duration);
+}
+
+/* Skills */
+#skills {
+  /* background-color: beige; */
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0px;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.skill {
+  margin-bottom: 8px;
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+/* Work */
+.work__categories {
+  margin: 40px;
+}
+
+.category__btn {
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+  margin-bottom: 8px;
+}
+
+.category__btn.selected,
+.category__btn:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.category__count {
+  /* 동그라미가 예쁘지 않은 이유는 span이기 때문 */
+  /* span 컨텐츠를 꽉 감싸주는 사이즈로 정해지기 때문에  */
+  /* display: inline block; 으로 바꿔야 동그라미가 예쁘게 만들어짐 */
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  /* flex box 위치 이동하기 */
+  /* position: relative;와 위치 지정은 한 세트!  */
+  position: relative;
+  top: -20px;
+  left: 4px;
+  /* 투명도 설정하기 설정값 0.1 ~ 1.0 */
+  opacity: 0;
+  transition: var(--annimation-duration) ease-in;
+}
+
+.work__projects {
+  /* flex box로 만들기 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+  transition: all var(--annimation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(200px);
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 250px;
+  margin: 2px;
+  background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
+}
+
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project__description {
+  position: absolute;
+  background-color: var(--color-black);
+  display: flex;
+  color: var(--color-orange);
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all var(--annimation-duration) ease-in;
+}
+
+.project:hover .project__description {
+  opacity: 0.8;
+}
+
+.project__description h3 {
+  color: var(--color-orange);
+}
+
+/* After, Work 강의 다시 듣기 이해가 안됌) */
+.project__description h3:after {
+  display: block;
+  position: relative;
+  left: 50%;
+  content: "";
+  width: 25px;
+  height: 2px;
+  margin-left: -12px;
+  margin-top: 8px;
+  background-color: var(--color-orange);
+}
+
+/* Testimonial */
+#testmonials {
+  background-color: var(--color-black);
+  padding: 200px 0px;
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px 0px;
+}
+
+.testimonial img {
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+  padding: 18px;
+  background-color: white;
+  border-radius: var(--size-border-radius);
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+.testimonial__speech-bubble a {
+  color: var(--color-pink);
+}
+
+/* Contact */
+
+#contact {
+  background-color: var(--color-pink);
+  background: url("imgs/handshake-4040911_1920.jpg") center/cover no-repeat;
+  padding: 200px 0px 250px 0px;
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0px;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0px;
+  transition: all var(--annimation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}
+
+.carl__sagan {
+  color: blue;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 25px;
+}
+
+/* scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #ffca28;
+  transition: all 500ms ease-in;
+  /* animation이 되지 않는다. */
+  /* 왜냐하면 display는 완전히 없어졌다가 나타나는 것이기 때문임 */
+  /* 따라서 display: none; 대신에 opacity: 0;으로! */
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrow-up.visiable {
+  /* display: block; */
+  /* display: none;에서 다시 보이게 하려면 block; */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Make it responsive nav */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    /* display: none; */
+    /* 을 보여주려면 다시 display: block;를 써야함 */
+    display: block;
+    color: var(--color-balck);
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    /* 평소에는 보이지 않게 */
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    /* 센터로 오지 않을 떄는 넓이 자체가 작아서 그럴 수 있음 */
+    /* 따라서 width: 100%;로 만들어줘야함 */
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    margin: 20px 0px;
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+}
